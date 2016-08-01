@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <!-- 植入icon -->
+    <link rel="shortcut icon" href="../img/百度icon.gif" type="image/x-icon">
+    <!-- 引入css -->
+    <link rel="stylesheet" type="text/css" href="../css/baidu登录.css">
+</head>
+
+<body>
+    <!-- div布局 -->
+    <div class="wrapper" id="container">
+        <div class="skin_container">
+            <img src="../img/skin04s.jpg">
+        </div>
+        <!-- 换肤 -->
+        <div class="head_skin">
+            <div class="skin_menu">
+                <div class="skin_title">
+                    <ul class="skin_nav">
+                        <li class="skin_nav_list choose_nav">
+                            <span class="skin_nav_name">热门</span>
+                        </li>
+                        <li class="skin_nav_list">
+                            <span class="skin_nav_name">游戏</span>
+                        </li>
+                        <li class="skin_nav_list">
+                            <span class="skin_nav_name">卡通</span>
+                        </li>
+                        <li class="skin_nav_list">
+                            <span class="skin_nav_name">女神降临</span>
+                        </li>
+                        <li class="skin_nav_list">
+                            <span class="skin_nav_name">明星</span>
+                        </li>
+                        <li class="skin_nav_list">
+                            <span class="skin_nav_name">风景</span>
+                        </li>
+                        <li class="skin_nav_list">
+                            <span class="skin_nav_name">简约</span>
+                        </li>
+                        <li class="skin_nav_list">
+                            <span class="skin_nav_name">小清新</span>
+                        </li>
+                    </ul>
+                    <div class="skin_setting">
+                        <div class="skin_bg_icon">
+                            <span class="bg_up"></span>
+                            <span class="bg_title">收起</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skin_bg">
+                    <div class="skin_bgcon">
+                        <img data-skin="02" class="big" src="../img/skin02.jpg">
+                        <img data-skin="03" src="../img/skin03.jpg">
+                        <img data-skin="04" src="../img/skin04.jpg">
+                        <img data-skin="05" src="../img/skin05.jpg">
+                        <img data-skin="06" src="../img/skin06.jpg">
+                        <img data-skin="07" class="big" src="../img/skin07.jpg">
+                        <img data-skin="08" src="../img/skin08.jpg">
+                        <img data-skin="09" src="../img/skin09.jpg">
+                        <img data-skin="10" class="last" src="../img/skin10.jpg">
+                        <img data-skin="11" class="last" src="../img/skin11.jpg">
+                        <img data-skin="12" class="last" src="../img/skin12.jpg">
+                    </div>
+                    <div class="skin_preview">
+                        <div id="skin_preview"></div>
+                        <div class="skin_content">
+                            <img src="../img/skin02.jpg" id="skin_img">
+                        </div>
+                        <div class="preview_bg"></div>
+                    </div>
+                    <p class="preview_title">背景皮肤效果预览</p>
+                </div>
+            </div>
+        </div>
+        <!-- 头部 -->
+        <header>
+            <!-- 这是导航栏 -->
+            <div class="main">
+                <div class="weather-mod">
+                    <a href="" class="city-wather">
+                        <div class="show-weather">
+                            <span>成都：</span>
+                            <span class="weather-icon"></span>
+                            <span>18°C</span>
+                            <span>良 64 |</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="nav-middle">
+                    <a href="">宝箱</a>
+                    <a class="skin">换肤</a>
+                    <a href="">消息</a>
+                </div>
+                <nav>
+                    <a href="http://www.nuomi.com/">糯米</a>
+                    <a href="http://news.baidu.com/">新闻</a>
+                    <a href="http://www.hao123.com/">hao123</a>
+                    <a href="http://map.baidu.com/">地图</a>
+                    <a href="http://v.baidu.com/">视频</a>
+                    <a href="http://tieba.baidu.com/">贴吧</a>
+                    <div class="sign-menu">
+                        <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" class="sign">lh5177</a>
+                        <div class="baidu-sign">
+                            <span class="icon-trangle"></span>
+                            <a href="javascript:;">我的VIP</a>
+                            <a href="//www.baidu.com/gaoji/advanced.html">个人中心</a>
+                            <a href="javascript:;">意见反馈</a>
+                            <a href="javascript:;">账号问题</a>
+                            <a href="javascript:;">退出</a>
+                        </div>
+                    </div>
+                    <div class="setting-menu">
+                        <a class="baidu-nav" href="javascript:;">设置</a>
+                        <!-- 设置下拉菜单 -->
+                        <div class="baidu-setting">
+                            <span class="icon-trangle"></span>
+                            <a href="javascript:;">搜索设置</a>
+                            <a href="//www.baidu.com/gaoji/advanced.html">高级设置</a>
+                            <a href="javascript:;">关闭预测</a>
+                            <a href="javascript:;">搜索历史</a>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="more" id="navMore">更多产品</a>
+                </nav>
+            </div>
+        </header>
+        <!-- 更多产品侧边栏 -->
+        <div class="more-product" id="moreProduct">
+            <ul>
+                <li class="more-sub-btn">
+                    <a href="javascript:;">更多产品</a>
+                </li>
+                <li>
+                    <a href="http://www.music.baidu.com"><span class="more-sub-one"></span>音乐</a>
+                </li>
+                <li>
+                    <a href="http://image.baidu.com/"><span class="more-sub-two"></span>图片</a>
+                </li>
+                <li>
+                    <a href="http://zhidao.baidu.com/"><span class="more-sub-three"></span>知道</a>
+                </li>
+                <li><a href="http://wenku.baidu.com/"><span class="more-sub-four"></span>文库</a>
+                </li>
+                <li>
+                    <a href="http://top.baidu.com/"><span class="more-sub-five"></span>风云榜</a>
+                </li>
+                <li>
+                    <a href="http://e.baidu.com/?refer=888"><span class="more-sub-six"></span>百度推广</a>
+                </li>
+                <li class="more-all">
+                    <a href="https://www.baidu.com/more/">全部产品>></a>
+                </li>
+            </ul>
+        </div>
+        <!-- 滚动后出现固定搜索框 -->
+        <div class="top-search">
+            <div class="s-form">
+                <img src="../img/logo_top.png" alt="百度一下">
+                <form action="http://www.baidu.com/s" method="get" target="_blank">
+                    <input class="s-input" type="text" name="wd" autofocus="autofocus" />
+                    <button class="s-btn" type="submit">百度一下</button>
+                    <span class="icon-mic"></span>
+                </form>
+            </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="content">
+            <div class="search-form">
+                <img src="../img/logo_white.png" alt="百度一下">
+                <!-- 以name为介质，传到百度的服务器，以get的形式，用新的窗口打开，完成搜索功能。 -->
+                <form action="http://www.baidu.com/s" method="get" target="_blank">
+                    <input class="search-input" type="text" name="wd" autofocus="autofocus" />
+                    <!-- h5自动聚焦属性 -->
+                    <button class="search-btn" type="submit">百度一下</button>
+                    <span class="icon-mic"></span>
+                </form>
+                <!-- 这是一个表单，完成搜索功能。 -->
+            </div>
+        </div>        
+        <!-- 标签页导航 -->
+        <div id="menu_wrap" class="menu_wrapper">
+            <div class="menu_main">
+                <div class="menu_card">
+                    <div class="menu_container">
+                        <div class="menu_nav">
+                            <div class="menu_navin">
+                                <span id="menu_mine" class="menu_mine menu_item" data-id="content_0">
+                                <div class="mine_icon"></div>
+                                <div class="mine_text">我的关注</div>
+                                </span>
+                                <div class="menu_outer">
+                                    <div class="outer_wrapper">
+                                        <span class="outer_list menu_item" data-id="content_1">导航</span>
+                                        <span class="outer_list menu_item current" data-id="content_2">推荐</span>
+                                        <span class="outer_list menu_item" data-id="content_3">视频</span>
+                                        <span class="outer_list menu_item" data-id="content_4">购物</span>
+                                    </div>
+                                    <div class="space_wrapper">
+                                    </div>
+                                </div>
+                                <span class="set_wrapper" title="设置">
+                                    <div class="set_icon"></div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--标签页-->
+                    <div id="menu_content" class="menu_content">
+                        <!--推荐-->
+                        <div id="content_2" class="content_inner">
+                            <div class="content_news">
+                                <div class="news_wrapper">
+                                    <div class="news_rank">
+                                        <div class="rank_title">
+                                            <div class="title_text">
+                                                <a href="">实时热点</a>
+                                            </div>
+                                            <a href="" class="hot_refresh">
+                                                <span class="refresh_icon"></span>
+                                                <span class="refresh_text">换一换</span>
+                                            </a>
+                                        </div>
+                                        <ul class="rank_content">
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">国开行牌坊拆除</a>
+                                        <span class="new_identity"></span>
+                                                </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">买万元手机送女友</a>
+                                        <span class="new_identity"></span>
+                                                </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">钓起娃娃鱼放生</a>
+                                        <span class="new_identity"></span>
+                                                </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">持刀抢劫留手机号</a>
+                                        <span class="new_identity"></span>
+                                                </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">广电总局赞芈月传</a>
+                                        <span class="new_identity"></span>
+                                                </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">3口当街遇袭</a>
+
+                                        </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">美公布B-21</a>
+
+                                        </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">昆明办文化游园会</a>
+
+                                        </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">佩兰正式告别</a>
+
+                                        </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">交易中心客流限制</a>
+
+                                        </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">乘客进入运营轨道</a>
+
+                                        </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">挖眼男童重见光明</a>
+
+                                        </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">广东中学贪腐窝案</a>
+
+                                        </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">19岁少女患怪病</a>
+
+                                        </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">女法官遭枪击殉职</a>
+
+                                        </span>
+                                                </span>
+                                            </li>
+                                            <li class="rank_item">
+                                                <em class="news_icon"></em>
+                                                <span class="news_title">
+                                        <span class="title_link">
+                                        <a href="" class="title_content">虐女儿伤口撒盐</a>
+
+                                        </span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- 新闻详情 -->
+                                    <div class="news_tips">
+                                        <div class="left_line"></div>
+                                        <div class="tips_content">
+                                            <div class="tips_icon"></div>
+                                            <span>以下信息根据您的兴趣推荐</span>
+                                        </div>
+                                        <div class="right_line"></div>
+                                    </div>
+                                    <!-- 详情 -->
+                                    <div class="news_container">
+                                        <div class="newslist_wrapper">
+                                            <div class="newslist_item">
+                                                <div class="text_content">
+                                                    <h2>
+                                                        <a href="" class="font_yahei">
+                                                            <span class="news_status"></span>
+                                                            12三分平科比！库里一战封神 获五纪录牛炸天
+                                                        </a>
+                                                    </h2>
+                                                </div>
+                                                <div class="pic_content">
+                                                    <ul class="news_img">
+                                                        <li class="img_item">
+                                                            <a href="">
+                                                                <img src="../img/news01.jpg" class="img_link">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="news_form">
+                                                    <span class="news_net"><a href="">腾讯体育</a></span>
+                                                    <span class="news_time">02-28 13:03</span>
+                                                </div>
+                                            </div>
+                                            <div class="newslist_item">
+                                                <div class="text_content">
+                                                    <h2>
+                                                        <a href="" class="font_yahei">
+                                                            <span class="news_status"></span>
+                                                            世界毒性最强植物鸡母珠在广州出现 1颗可致命
+                                                        </a>
+                                                    </h2>
+                                                </div>
+                                                <div class="pic_content">
+                                                    <ul class="news_img">
+                                                        <li class="img_item">
+                                                            <a href="">
+                                                                <img src="../img/news02.jpg" class="img_link">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="news_form">
+                                                    <span class="news_net"><a href="">腾讯新闻</a></span>
+                                                    <span class="news_time">02-28 22:04</span>
+                                                </div>
+                                            </div>
+                                            <div class="newslist_item">
+                                                <div class="text_content">
+                                                    <h2>
+                                                        <a href="" class="font_yahei">
+                                                            <span class="news_status"></span>
+                                                            美前中情局局长:若特朗普当选军队将暴乱
+                                                        </a>
+                                                    </h2>
+                                                </div>
+                                                <div class="pic_content">
+                                                    <ul class="news_img">
+                                                        <li class="img_item">
+                                                            <a href="">
+                                                                <img src="../img/news03.jpg" class="img_link">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="news_form">
+                                                    <span class="news_net"><a href="">光明网</a></span>
+                                                    <span class="news_time">02-29 09:25</span>
+                                                </div>
+                                            </div>
+                                            <div class="newslist_item">
+                                                <div class="text_content">
+                                                    <h2>
+                                                        <a href="" class="font_yahei">
+                                                            <span class="news_status"></span>
+                                                            12三分平科比！库里一战封神 获五纪录牛炸天
+                                                        </a>
+                                                    </h2>
+                                                </div>
+                                                <div class="pic_content">
+                                                    <ul class="news_img">
+                                                        <li class="img_item">
+                                                            <a href="">
+                                                                <img src="../img/news01.jpg" class="img_link">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="news_form">
+                                                    <span class="news_net"><a href="">腾讯体育</a></span>
+                                                    <span class="news_time">02-28 13:03</span>
+                                                </div>
+                                            </div>
+                                            <div class="newslist_item">
+                                                <div class="text_content">
+                                                    <h2>
+                                                        <a href="" class="font_yahei">
+                                                            <span class="news_status"></span>
+                                                            世界毒性最强植物鸡母珠在广州出现 1颗可致命
+                                                        </a>
+                                                    </h2>
+                                                </div>
+                                                <div class="pic_content">
+                                                    <ul class="news_img">
+                                                        <li class="img_item">
+                                                            <a href="">
+                                                                <img src="../img/news02.jpg" class="img_link">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="news_form">
+                                                    <span class="news_net"><a href="">腾讯新闻</a></span>
+                                                    <span class="news_time">02-28 22:04</span>
+                                                </div>
+                                            </div>
+                                            <div class="newslist_item">
+                                                <div class="text_content">
+                                                    <h2>
+                                                        <a href="" class="font_yahei">
+                                                            <span class="news_status"></span>
+                                                            美前中情局局长:若特朗普当选军队将暴乱
+                                                        </a>
+                                                    </h2>
+                                                </div>
+                                                <div class="pic_content">
+                                                    <ul class="news_img">
+                                                        <li class="img_item">
+                                                            <a href="">
+                                                                <img src="../img/news03.jpg" class="img_link">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="news_form">
+                                                    <span class="news_net"><a href="">光明网</a></span>
+                                                    <span class="news_time">02-29 09:25</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--导航-->
+                        <div id="content_1" class="content_inner" style="display: none">
+                            <div id="nav_card" class="nav_card">
+                                <div class="nav_block_wrapper">
+                                    <div class="news_container">
+                                        <div class="nav_personal">
+                                            <div class="nav_area">
+                                                <h1>猜你喜欢</h1>
+                                                <div class="like_item fanli_nav">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/nuomi.png">
+                                                        <span class="nav_text">百度糯米</span>
+                                                    </a>
+                                                    <div class="fanli_inner">
+                                                        <a href="">最高返利3.54%</a>
+                                                    </div>
+                                                    <div class="fanli_tag">
+                                                        <a href=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="like_item fanli_nav">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/jd.png">
+                                                        <span class="nav_text">京东商城</span>
+                                                    </a>
+                                                    <div class="fanli_inner">
+                                                        <a href="">最高返利80%</a>
+                                                    </div>
+                                                    <div class="fanli_tag">
+                                                        <a href=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="like_item fanli_nav">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/yhd.png">
+                                                        <span class="nav_text">1号店</span>
+                                                    </a>
+                                                    <div class="fanli_inner">
+                                                        <a href="">最高返利75.60%</a>
+                                                    </div>
+                                                    <div class="fanli_tag">
+                                                        <a href=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="like_item fanli_nav">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/sn.png">
+                                                        <span class="nav_text">苏宁易购</span>
+                                                    </a>
+                                                    <div class="fanli_inner">
+                                                        <a href="">最高返利80.00%</a>
+                                                    </div>
+                                                    <div class="fanli_tag">
+                                                        <a href=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="like_item fanli_nav">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/yhd.png">
+                                                        <span class="nav_text">唯品会</span>
+                                                    </a>
+                                                    <div class="fanli_inner">
+                                                        <a href="">最高返利7.00%</a>
+                                                    </div>
+                                                    <div class="fanli_tag">
+                                                        <a href=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="like_item fanli_nav">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/yhd.png">
+                                                        <span class="nav_text">当当网</span>
+                                                    </a>
+                                                    <div class="fanli_inner">
+                                                        <a href="">最高返利75.00%</a>
+                                                    </div>
+                                                    <div class="fanli_tag">
+                                                        <a href=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">蔷薇缭乱</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/jk.png">
+                                                        <span class="nav_text">极客学院</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/aqy.png">
+                                                        <span class="nav_text">青丘狐传说</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/jq.png">
+                                                        <span class="nav_text">jquery</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/blog.png">
+                                                        <span class="nav_text">css3</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">jquery api</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">vue.js</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/bd.png">
+                                                        <span class="nav_text">赵丽颖_...</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/bd.png">
+                                                        <span class="nav_text">宋茜_百...</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">jquery在...</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">复旦大学...</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">JavaScri...</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段观察</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">实习僧</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段早读课</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">稀土掘金</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">百度VIP</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/micro.png">
+                                                        <span class="nav_text">微软商店</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段早读课</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">稀土掘金</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">百度VIP</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/micro.png">
+                                                        <span class="nav_text">微软商店</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段早读课</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">稀土掘金</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">百度VIP</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/micro.png">
+                                                        <span class="nav_text">微软商店</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段早读课</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">稀土掘金</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">百度VIP</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/micro.png">
+                                                        <span class="nav_text">微软商店</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段早读课</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">稀土掘金</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">百度VIP</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/micro.png">
+                                                        <span class="nav_text">微软商店</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段早读课</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">稀土掘金</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">百度VIP</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/micro.png">
+                                                        <span class="nav_text">微软商店</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段早读课</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">稀土掘金</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">百度VIP</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/micro.png">
+                                                        <span class="nav_text">微软商店</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段早读课</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">稀土掘金</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">百度VIP</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/micro.png">
+                                                        <span class="nav_text">微软商店</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段早读课</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">稀土掘金</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">百度VIP</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/micro.png">
+                                                        <span class="nav_text">微软商店</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段早读课</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">稀土掘金</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">百度VIP</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/micro.png">
+                                                        <span class="nav_text">微软商店</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">前段早读课</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">稀土掘金</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/ie.png">
+                                                        <span class="nav_text">百度VIP</span>
+                                                    </a>
+                                                </div>
+                                                <div class="like_item">
+                                                    <a href="" class="nav_block">
+                                                        <img src="../img/micro.png">
+                                                        <span class="nav_text">微软商店</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--我的关注-->
+                        <div id="content_0" class="content_inner" style="display: none">
+                            <div class="mine_card">
+                                <div class="mine_wrapper">
+                                    <div class="mine_block">
+                                        <div class="block_container">
+                                            <div class="block_title">
+                                                <div class="title_inner">
+                                                    <span class="mine_title">
+                                            <div class="mine_title_icon">
+                                                <em></em>
+                                            </div>
+                                            <span class="mine_title_text">
+                                                 我的导航
+                                            </span>
+                                                    <span class="mine_title_num">
+                                                (
+                                                <span>22</span> )
+                                                    </span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="block_content">
+                                                <!--综合-->
+                                                <div class="mine_item">
+                                                    <div class="mine_border"></div>
+                                                    <div class="mine_name">
+                                                        <span class="name_text">综合</span>
+                                                    </div>
+                                                    <div class="mine_content">
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/bd.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">百度知道</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/sky.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">天空软件站</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/bd.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">百度消息</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/ie.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">营山中学</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/ie.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">四川高考网</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/ie.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">天星教育网</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/qqmail.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">QQ邮箱</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/ie.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">80S手机电..</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/ie.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">dos之家</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--贴吧-->
+                                                <div class="mine_item">
+                                                    <div class="mine_border"></div>
+                                                    <div class="mine_name">
+                                                        <span class="name_text">贴吧</span>
+                                                    </div>
+                                                    <div class="mine_content">
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/bd.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">百度贴吧</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/bd.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">吞噬星空吧</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 游戏 -->
+                                                <div class="mine_item">
+                                                    <div class="mine_border"></div>
+                                                    <div class="mine_name">
+                                                        <span class="name_text">游戏</span>
+                                                    </div>
+                                                    <div class="mine_content">
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/cf.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">穿越火线</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 影视 -->
+                                                <div class="mine_item">
+                                                    <div class="mine_border"></div>
+                                                    <div class="mine_name">
+                                                        <span class="name_text">影视</span>
+                                                    </div>
+                                                    <div class="mine_content">
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/pptv.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">PPTV</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/tyv.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">画皮</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/bsw.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">播视网</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/tyv.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">天涯明月刀</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/xyv.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">轩辕剑mp4...</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/xyv.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">轩辕剑之天...</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 工具 -->
+                                                <div class="mine_item">
+                                                    <div class="mine_border"></div>
+                                                    <div class="mine_name">
+                                                        <span class="name_text">工具</span>
+                                                    </div>
+                                                    <div class="mine_content">
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/weather.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">天气预报</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--综合-->
+                                                <div class="mine_item">
+                                                    <div class="mine_border"></div>
+                                                    <div class="mine_name">
+                                                        <span class="name_text">综合</span>
+                                                    </div>
+                                                    <div class="mine_content">
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/bd.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">百度知道</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/sky.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">天空软件站</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/bd.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">百度消息</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/ie.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">营山中学</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/ie.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">四川高考网</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/ie.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">天星教育网</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/qqmail.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">QQ邮箱</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/ie.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">80S手机电..</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/ie.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">dos之家</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--贴吧-->
+                                                <div class="mine_item">
+                                                    <div class="mine_border"></div>
+                                                    <div class="mine_name">
+                                                        <span class="name_text">贴吧</span>
+                                                    </div>
+                                                    <div class="mine_content">
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/bd.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">百度贴吧</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/bd.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">吞噬星空吧</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 游戏 -->
+                                                <div class="mine_item">
+                                                    <div class="mine_border"></div>
+                                                    <div class="mine_name">
+                                                        <span class="name_text">游戏</span>
+                                                    </div>
+                                                    <div class="mine_content">
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/cf.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">穿越火线</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 影视 -->
+                                                <div class="mine_item">
+                                                    <div class="mine_border"></div>
+                                                    <div class="mine_name">
+                                                        <span class="name_text">影视</span>
+                                                    </div>
+                                                    <div class="mine_content">
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/pptv.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">PPTV</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/tyv.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">画皮</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/bsw.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">播视网</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/tyv.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">天涯明月刀</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/xyv.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">轩辕剑mp4...</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/xyv.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">轩辕剑之天...</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 工具 -->
+                                                <div class="mine_item">
+                                                    <div class="mine_border"></div>
+                                                    <div class="mine_name">
+                                                        <span class="name_text">工具</span>
+                                                    </div>
+                                                    <div class="mine_content">
+                                                        <div class="mine_navitem">
+                                                            <a class="border_item">
+                                                                <img class="mine_navicon" src="../img/weather.png">
+                                                                <div class="mine_navtxt">
+                                                                    <span class="mine_navtxt_in">天气预报</span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--视频-->
+                        <div id="content_3" class="content_inner" style="display: none">
+                            <div class="video_card">
+                                <div>
+                                    <div class="video_container">
+                                        <div class="video_wrapper">
+                                            <div class="video_list">
+                                                <div class="item_wrapper">
+                                                    <div class="video_item video_item01">
+                                                        <div class="v_pic v_pic01">
+                                                            <a class="video_pic">
+                                                                <img src="../img/video01.jpg" class="video_img">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">91集全</span>
+                                                            </a>
+                                                            <a class="v_skin v_skin01"></a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">天天有喜</a>
+                                                            </div>
+                                                            <div class="v_score">
+                                                                <span class="score_star">
+                                                <span class="star_active" style="width: 23.4px;"></span>
+                                                                </span>
+                                                                3.6
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video_list">
+                                                <div class="item_wrapper">
+                                                    <div class="video_item video_item01">
+                                                        <div class="v_pic v_pic01">
+                                                            <a class="video_pic">
+                                                                <img src="../img/video02.jpg" class="video_img">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">07-03期</span>
+                                                            </a>
+                                                            <a class="v_skin v_skin02"></a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">奔跑吧兄弟第二季</a>
+                                                            </div>
+                                                            <div class="v_score">
+                                                                <span class="score_star">
+                                                <span class="star_active" style="width: 42.9px;"></span>
+                                                                </span>
+                                                                6.6
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video_list">
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video03.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">01:39</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">第88届奥斯卡莱昂纳多获影帝 失奖瞬间集锦</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video04.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">00:31</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">普罗米修斯 重口味预告片</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video_list">
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video05.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">01:31</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">菲律宾四处碰壁装可怜 南海非军事化别只说不干</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video06.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">00:34</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">海口一男子砍伤10名小学生后自杀身亡</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video_list">
+                                                <div class="item_wrapper">
+                                                    <div class="video_item video_item01">
+                                                        <div class="v_pic v_pic01">
+                                                            <a class="video_pic">
+                                                                <img src="../img/video01.jpg" class="video_img">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">91集全</span>
+                                                            </a>
+                                                            <a class="v_skin v_skin01"></a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">天天有喜</a>
+                                                            </div>
+                                                            <div class="v_score">
+                                                                <span class="score_star">
+                                                <span class="star_active" style="width: 23.4px;"></span>
+                                                                </span>
+                                                                3.6
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video_list">
+                                                <div class="item_wrapper">
+                                                    <div class="video_item video_item01">
+                                                        <div class="v_pic v_pic01">
+                                                            <a class="video_pic">
+                                                                <img src="../img/video02.jpg" class="video_img">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">07-03期</span>
+                                                            </a>
+                                                            <a class="v_skin v_skin02"></a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">奔跑吧兄弟第二季</a>
+                                                            </div>
+                                                            <div class="v_score">
+                                                                <span class="score_star">
+                                                <span class="star_active" style="width: 42.9px;"></span>
+                                                                </span>
+                                                                6.6
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video_list">
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video03.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">01:39</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">第88届奥斯卡莱昂纳多获影帝 失奖瞬间集锦</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video04.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">00:31</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">普罗米修斯 重口味预告片</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video_list">
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video05.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">01:31</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">菲律宾四处碰壁装可怜 南海非军事化别只说不干</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video06.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">00:34</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">海口一男子砍伤10名小学生后自杀身亡</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video_list">
+                                                <div class="item_wrapper">
+                                                    <div class="video_item video_item01">
+                                                        <div class="v_pic v_pic01">
+                                                            <a class="video_pic">
+                                                                <img src="../img/video01.jpg" class="video_img">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">91集全</span>
+                                                            </a>
+                                                            <a class="v_skin v_skin01"></a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">天天有喜</a>
+                                                            </div>
+                                                            <div class="v_score">
+                                                                <span class="score_star">
+                                                <span class="star_active" style="width: 23.4px;"></span>
+                                                                </span>
+                                                                3.6
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video_list">
+                                                <div class="item_wrapper">
+                                                    <div class="video_item video_item01">
+                                                        <div class="v_pic v_pic01">
+                                                            <a class="video_pic">
+                                                                <img src="../img/video02.jpg" class="video_img">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">07-03期</span>
+                                                            </a>
+                                                            <a class="v_skin v_skin02"></a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">奔跑吧兄弟第二季</a>
+                                                            </div>
+                                                            <div class="v_score">
+                                                                <span class="score_star">
+                                                <span class="star_active" style="width: 42.9px;"></span>
+                                                                </span>
+                                                                6.6
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video_list">
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video03.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">01:39</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">第88届奥斯卡莱昂纳多获影帝 失奖瞬间集锦</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video04.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">00:31</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">普罗米修斯 重口味预告片</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="video_list">
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video05.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">01:31</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">菲律宾四处碰壁装可怜 南海非军事化别只说不干</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="video_top">
+                                                    <div class="video_item video_item02">
+                                                        <div class="v_pic v_pic02">
+                                                            <a class="pic02_img">
+                                                                <img src="../img/video06.jpg" alt="" class="v_pic02">
+                                                            </a>
+                                                            <a class="img_click" title="">
+                                                                <span class="v_tag">00:34</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="v_txt">
+                                                            <div class="v_text">
+                                                                <a class="v_title">海口一男子砍伤10名小学生后自杀身亡</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--购物-->
+                        <div id="content_4" class="content_inner" style="display: none">
+                            <div class="shop_card">
+                                <div class="shop_wrapper">
+                                    <div class="shop_list">
+                                        <div class="shop_item">
+                                            <div class="shop_imgwrapper">
+                                                <a href="" class="shop_img">
+                                                    <img src="../img/shop01.jpg">
+                                                    <div class="mask shop_masktop">
+                                                        <span class="shop_title">南极人薄款商务男袜</span>
+                                                    </div>
+                                                    <div class="line_cover"></div>
+                                                    <div class="mask shop_maskdown">
+                                                        <span class="shop_title">百度返现</span>
+                                                        <span class="shop_precent">50%</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="shop_item">
+                                            <div class="shop_imgwrapper">
+                                                <a href="" class="shop_img">
+                                                    <img src="../img/shop02.jpg">
+                                                    <div class="mask shop_masktop">
+                                                        <span class="shop_title">RELYING入耳式耳塞</span>
+                                                    </div>
+                                                    <div class="line_cover"></div>
+                                                    <div class="mask shop_maskdown">
+                                                        <span class="shop_title">百度返现</span>
+                                                        <span class="shop_precent">45%</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="shop_item">
+                                            <div class="shop_imgwrapper">
+                                                <a href="" class="shop_img">
+                                                    <img src="../img/shop03.jpg">
+                                                    <div class="mask shop_masktop">
+                                                        <span class="shop_title">永亮成人竹浆纤维浴巾</span>
+                                                    </div>
+                                                    <div class="line_cover"></div>
+                                                    <div class="mask shop_maskdown">
+                                                        <span class="shop_title">百度返现</span>
+                                                        <span class="shop_precent">71%</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="shop_item">
+                                            <a href="" class="shop_word">
+                                                <p>1元得iPhone6S</p>
+                                                <span>千元商品 1元可得</span>
+                                                <div class="shop_link">去看看</div>
+                                            </a>
+                                            <div class="shop_mall">
+                                                <a class="mall_title">
+                                                    <p>返利商城</p>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="">京东商城</a></li>
+                                                    <li><a href="">百度糯米</a></li>
+                                                    <li><a href="">1号店</a></li>
+                                                    <li><a href="">当当网</a></li>
+                                                    <li><a href="">蘑菇街</a></li>
+                                                    <li><a href="">唯品会</a></li>
+                                                    <li><a href="">聚美优品</a></li>
+                                                    <li><a href="">聚划算</a></li>
+                                                    <li><a href="">天猫超市</a></li>
+                                                    <li><a href="" class="shop_more">更多</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="shop_item">
+                                            <div class="shop_imgwrapper">
+                                                <a href="" class="shop_img">
+                                                    <img src="../img/shop01.jpg">
+                                                    <div class="mask shop_masktop">
+                                                        <span class="shop_title">南极人薄款商务男袜</span>
+                                                    </div>
+                                                    <div class="line_cover"></div>
+                                                    <div class="mask shop_maskdown">
+                                                        <span class="shop_title">百度返现</span>
+                                                        <span class="shop_precent">50%</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="shop_item">
+                                            <div class="shop_imgwrapper">
+                                                <a href="" class="shop_img">
+                                                    <img src="../img/shop02.jpg">
+                                                    <div class="mask shop_masktop">
+                                                        <span class="shop_title">RELYING入耳式耳塞</span>
+                                                    </div>
+                                                    <div class="line_cover"></div>
+                                                    <div class="mask shop_maskdown">
+                                                        <span class="shop_title">百度返现</span>
+                                                        <span class="shop_precent">45%</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="shop_item">
+                                            <div class="shop_imgwrapper">
+                                                <a href="" class="shop_img">
+                                                    <img src="../img/shop03.jpg">
+                                                    <div class="mask shop_masktop">
+                                                        <span class="shop_title">永亮成人竹浆纤维浴巾</span>
+                                                    </div>
+                                                    <div class="line_cover"></div>
+                                                    <div class="mask shop_maskdown">
+                                                        <span class="shop_title">百度返现</span>
+                                                        <span class="shop_precent">71%</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="shop_item">
+                                            <a href="" class="shop_word">
+                                                <p>1元得iPhone6S</p>
+                                                <span>千元商品 1元可得</span>
+                                                <div class="shop_link">去看看</div>
+                                            </a>
+                                            <div class="shop_mall">
+                                                <a class="mall_title">
+                                                    <p>返利商城</p>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="">京东商城</a></li>
+                                                    <li><a href="">百度糯米</a></li>
+                                                    <li><a href="">1号店</a></li>
+                                                    <li><a href="">当当网</a></li>
+                                                    <li><a href="">蘑菇街</a></li>
+                                                    <li><a href="">唯品会</a></li>
+                                                    <li><a href="">聚美优品</a></li>
+                                                    <li><a href="">聚划算</a></li>
+                                                    <li><a href="">天猫超市</a></li>
+                                                    <li><a href="" class="shop_more">更多</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="shop_item">
+                                            <div class="shop_imgwrapper">
+                                                <a href="" class="shop_img">
+                                                    <img src="../img/shop01.jpg">
+                                                    <div class="mask shop_masktop">
+                                                        <span class="shop_title">南极人薄款商务男袜</span>
+                                                    </div>
+                                                    <div class="line_cover"></div>
+                                                    <div class="mask shop_maskdown">
+                                                        <span class="shop_title">百度返现</span>
+                                                        <span class="shop_precent">50%</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="shop_item">
+                                            <div class="shop_imgwrapper">
+                                                <a href="" class="shop_img">
+                                                    <img src="../img/shop02.jpg">
+                                                    <div class="mask shop_masktop">
+                                                        <span class="shop_title">RELYING入耳式耳塞</span>
+                                                    </div>
+                                                    <div class="line_cover"></div>
+                                                    <div class="mask shop_maskdown">
+                                                        <span class="shop_title">百度返现</span>
+                                                        <span class="shop_precent">45%</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="shop_item">
+                                            <div class="shop_imgwrapper">
+                                                <a href="" class="shop_img">
+                                                    <img src="../img/shop03.jpg">
+                                                    <div class="mask shop_masktop">
+                                                        <span class="shop_title">永亮成人竹浆纤维浴巾</span>
+                                                    </div>
+                                                    <div class="line_cover"></div>
+                                                    <div class="mask shop_maskdown">
+                                                        <span class="shop_title">百度返现</span>
+                                                        <span class="shop_precent">71%</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="shop_item">
+                                            <a href="" class="shop_word">
+                                                <p>1元得iPhone6S</p>
+                                                <span>千元商品 1元可得</span>
+                                                <div class="shop_link">去看看</div>
+                                            </a>
+                                            <div class="shop_mall">
+                                                <a class="mall_title">
+                                                    <p>返利商城</p>
+                                                </a>
+                                                <ul>
+                                                    <li><a href="">京东商城</a></li>
+                                                    <li><a href="">百度糯米</a></li>
+                                                    <li><a href="">1号店</a></li>
+                                                    <li><a href="">当当网</a></li>
+                                                    <li><a href="">蘑菇街</a></li>
+                                                    <li><a href="">唯品会</a></li>
+                                                    <li><a href="">聚美优品</a></li>
+                                                    <li><a href="">聚划算</a></li>
+                                                    <li><a href="">天猫超市</a></li>
+                                                    <li><a href="" class="shop_more">更多</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="shop_tab">
+                                        <li class="tab_name shop_tab0">
+                                            <a class="chaoji">
+                                                超级返
+                                            </a>
+                                            <div class="down_arrow"></div>
+                                        </li>
+                                        <li class="tab_name shop_tab1">
+                                            <a>
+                                                9块9
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--滚动查看更多-->
+                </div>
+            </div>
+            <div class="more_bar">
+                <div class="load_text">滚动查看更多</div>
+                <div class="morebar_box">
+                    <div class="more_arrow"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 返回顶部 -->
+        <div id="top_feed" class="top_feed">
+            <div class="to_top">
+                <div class="icon_mask">
+                    <div class="feed_text">回到顶部</div>
+                </div>
+                <span class="top_icon"></span>
+            </div>
+        </div>
+        <!-- 尾部 -->
+        <footer>
+            <p>
+                <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+                <a href="http://home.baidu.com/">关于百度</a>
+                <a href="http://ir.baidu.com/">About Baidu</a>
+            </p>
+            <p class="copy-right">
+                <span>©2016 Baidu</span>
+                <a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/">意见反馈</a>
+                <span>京ICP证030173号</span>
+                <span class="icon-copyright"></span>
+            </p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="../js/jquery-2.2.3.js"></script>
+    <script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/baidu.js"></script>
+</body>
+
+</html>

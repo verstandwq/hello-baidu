@@ -1,0 +1,624 @@
+html,body{
+	height: 100%;
+}
+/*body设置全文字体，字体样式，外边距，内边距归零*/
+body{
+	margin: 0;
+	padding: 0;
+	font:12px arial;
+}
+input{
+	outline: none;
+}
+.wrapper{
+	position: relative;
+	min-width: 810px;
+	min-height: 600px;
+	height: 100%;
+}
+
+/*鼠标滚动的搜索框*/
+.top-search{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 80px;
+	background-color: #fff;
+	display: none;
+	z-index: 999;
+}
+.top-search .s-form{
+	margin: 0 auto;
+	width: 770px;
+	height: 40px;
+}
+.top-search .s-form form{
+	display: inline-block;
+}
+.top-search .s-form img{
+	position: relative;
+	top: 5px;
+	cursor: pointer;
+}
+.top-search .s-input{
+	width: 532px;
+	height:28px;
+	border:1px solid #b6b6b6;
+	padding: 3px 0 3px 7px;
+	border-right-width: 0;
+	border-color: #b8b8b8 transparent #ccc #b8b8b8;
+	vertical-align: middle;/*垂直居中*/
+}
+.top-search .s-input:hover{
+	border-color: #999 transparent #b3b3b3 #999;
+}
+.top-search .s-input:focus{
+	border-color: #4791ff transparent #4791ff #4791ff;
+}
+/*设置按钮*/
+.top-search .s-btn{
+	width: 100px;
+	height: 36px;
+	margin: -8px;
+	color: white;
+	font-size: 15px;
+	letter-spacing: 1px;/*增加字间宽*/
+	background-color: #3385ff;
+	border: 1px solid #2d7894;
+	vertical-align: middle;
+	cursor: pointer;/*鼠标小手*/
+}
+.top-search button:hover{
+	background-color: #317ef3;
+}
+.top-search form{
+	position: relative;
+}
+/*照相机图标*/
+.top-search .icon-mic{
+	position: absolute;
+	display: inline-block;
+	width: 22px;
+	height: 25px;
+	top: 0;
+	right: 100px;
+	background: url(../img/camera.png) 0px 10px no-repeat;
+	cursor: pointer;
+}
+.top-search .icon-mic:hover{
+	position: absolute;
+	top: 4px;
+	background: url(../img/camera.png) 0px -15px no-repeat;
+}
+
+/*新闻内容切换*/
+.new-main{
+	position: relative;
+	top: 40px;
+	width: 100%;
+	height: 500px;
+}
+.new-main .new-center{
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+
+}
+.new-main .new-center ul{
+	height: 30px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-bottom: #ccc 1px solid;
+}
+.new-main .new-center ul>li{
+	float: left;
+	padding: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 10px;
+
+}
+.new-main .new-center ul>li:hover{
+	background-color: #ccc;
+}
+.new-main .new-center ul .me{
+	background-color: #ccc;
+}
+
+.new-main .new-center .new-conten{
+	width: 1000px;
+	height: 500px;
+	border: 1px solid #fff;
+	position: absolute;
+	overflow: hidden;
+	background-color: rgba(255,255,255,.9);
+}
+.new-main .new-center .new-conten .guild{
+	width: 1000%;
+	height: 500px;
+	border: 1px solid #fff;
+}
+/*默认皮肤*/
+
+.skin_container {
+    /* background-attachment: fixed;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    zoom: 1;
+}
+
+.skin_container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+/*换肤菜单*/
+
+.head_skin {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    border-bottom: 1px solid #e3e3e3;
+    overflow: hidden;
+    z-index: 1000;
+    display: block;
+}
+
+.skin_menu {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.skin_title {
+    width: 911px;
+    height: 45px;
+    margin: 0px auto;
+}
+
+.skin_nav {
+    height: 46px;
+    float: left;
+    list-style: none;
+}
+
+.skin_nav_list {
+    cursor: pointer;
+    height: 46px;
+    padding: 0 10px;
+    font-size: 13px;
+    float: left;
+}
+
+.skin_nav_name {
+    color: #333;
+    display: inline-block;
+    margin-top: 19px;
+}
+
+.choose_nav {
+    background: #389cff;
+}
+
+.choose_nav .skin_nav_name {
+    color: #fff;
+}
+
+.skin_setting {
+    float: right;
+    margin-top: 10px;
+}
+
+.skin_bg_icon {
+    cursor: pointer;
+    float: left;
+    width: 40px;
+    margin-left: 25px;
+    color: #0079f5;
+}
+
+.skin_bg_icon span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bg_up {
+    margin-right: 2px;
+    background: url('../img/skin_icon.png') no-repeat -44px -175px;
+    width: 11px;
+    height: 15px;
+}
+
+.skin_bg {
+    width: 911px;
+    height: 205px;
+    margin: 25px auto;
+}
+
+.skin_bgcon {
+    width: 590px;
+    height: 190px;
+    float: left;
+}
+
+.skin_bgcon img {
+    width: 97px;
+    height: 59px;
+    display: block;
+    float: left;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+.skin_bgcon .big {
+    width: 195px;
+    height: 119px;
+}
+
+.skin_bgcon .last {
+    position: relative;
+    top: -60px;
+}
+
+.skin_preview {
+    float: right;
+    width: 294px;
+    position: relative;
+}
+
+#skin_preview {
+    position: relative;
+    float: right;
+    width: 264px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.skin_content {
+    position: absolute;
+    top: 15px;
+    left: 32px;
+    width: 260px;
+    height: 163px;
+    overflow: hidden;
+}
+
+.preview_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 264px;
+    height: 180px;
+    background: url('../img/skin_preview.png') no-repeat 0px 0px;
+}
+
+.preview_title {
+    float: right;
+    margin-right: 0;
+    margin-top: 7px;
+    text-align: center;
+    width: 262px;
+    font-size: 12px;
+    color: #666;
+}
+/*使用浮动之前需要清除浮动*/
+header{
+	overflow:hidden;
+}
+/*设置导航栏向右浮动，由margin和padding组成宽度*/
+header nav{
+	float: right;
+	margin: 19px 0 5px 0;
+	padding: 0 142px 0 0;
+}
+/*设置导航栏a标签，设置浮动后，块状元素自动成为行内元素。*/
+header nav a{
+	margin-left:20px;
+	color: #333;
+	float: left;
+	font-weight: bold;
+	line-height: 24px;
+	font-size: 13px;
+	text-decoration: underline;
+}
+header nav .sign{
+	font-weight: normal;
+}
+/*鼠标滑动的效果*/
+header nav a:hover{
+	color: #00c;
+}
+/*设置下拉菜单*/
+.setting-menu{
+	position: absolute;
+	width: 47px;
+	height: 24px;
+	right: 75px;
+	text-align: center;
+}
+.setting-menu a{
+	margin: 0;
+	font-weight: normal;
+
+}
+/*下拉菜单的边框*/
+.setting-menu .baidu-setting{
+	position: absolute;
+	top: 28px;
+	left: -19px;
+	width: 70px;
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 5px #ddd;
+	z-index: 99;
+	display: none;
+}
+.setting-menu:hover .baidu-setting{
+	display: block;
+}
+.setting-menu .baidu-setting a{
+	display: inline-block;
+	width: 100%;
+	color: #333;
+	text-decoration: none;
+	font-weight: normal;
+}
+.setting-menu .baidu-setting a:hover{
+	color: #fff;
+	background: #3385ff;
+}
+/*下拉菜单的三角形图标*/
+.setting-menu .icon-trangle{
+	position: absolute;
+	top: -11px;
+	left:25px;
+	width: 0;
+	height: 0;
+	display: block;
+	border: 5px solid transparent;
+	border-style: dashed dashed solid dashed;
+	border-bottom-color:#d8d8d8; 
+}
+.setting-menu .icon-trangle:after{
+	content: ".";
+	position: absolute;
+	top: -3px;
+	left:-5px;
+	width: 0;
+	height: 0;
+	display: block;
+	border: 5px solid transparent;
+	border-style: dashed dashed solid dashed;
+	border-bottom-color:#fff; 
+}
+/*设置更多产品，使用绝对定位*/
+header nav .more{
+	position: absolute;
+	right: 10px;
+	width: 60px;
+	height:23px;
+	float: left;
+	background: #38f;
+	color: #fff;
+	line-height: 24px;
+	font-size: 13px;
+	text-align: center;
+	overflow: hidden;
+	border-bottom: 1px solid #38f;
+	margin-left: 19px;
+	margin-right: 2px;
+	text-decoration: none;
+	font-weight: normal;
+}
+header nav .more:hover{
+	color: #fff;
+}
+/*更多产品侧边栏*/
+.more-product{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	min-height: 600px;
+	width: 75px;
+	border-left: 1px solid #ddd;
+	background-color: #f9f9f9;
+	display: none;
+	z-index: 999;
+}
+
+.more-product ul{
+	padding: 0 5px;
+	text-align: center;
+}
+.more-product li{
+	position: relative;
+	top: 10px;
+	height: 60px;
+	border-bottom: 1px solid #ddd;
+	list-style: none;
+}
+.more-product a{
+	color: #333;
+	text-decoration: none;
+}
+.more-product a:hover{
+	text-decoration: underline;
+}
+.more-product .more-sub-btn{
+	height: 20px;
+}
+.more-product .more-sub-btn a:hover{
+	text-decoration: none;
+}
+.more-product .more-sub-one{
+	display: block;
+	width: 40px;
+	height: 36px;
+	margin: 10px auto 5px;
+	background: url(../img/moreproduce.png) no-repeat -72px 0px;
+	cursor: pointer;
+}
+.more-product .more-sub-two{
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 10px auto 5px;
+	background: url(../img/moreproduce.png) no-repeat -112px 0px;
+	cursor: pointer;
+}
+.more-product .more-sub-three{
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 10px auto 5px;
+	background: url(../img/moreproduce.png) no-repeat -36px 0px;
+	cursor: pointer;
+}
+.more-product .more-sub-four{
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 10px auto 5px;
+	background: url(../img/moreproduce.png) no-repeat -148px 0px;
+	cursor: pointer;
+}
+.more-product .more-sub-five{
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 10px auto 5px;
+	background: url(../img/moreproduce.png) no-repeat -184px 0px;
+	cursor: pointer;
+}
+.more-product .more-sub-six{
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 10px auto 5px;
+	background: url(../img/moreproduce.png) no-repeat -220px 0px;
+	cursor: pointer;
+}
+.more-product .more-all{
+	border:none;
+	position: relative;
+	top: 30px;
+}
+.more-product .more-all a{
+	text-decoration: underline;
+}
+/*主体部分 使用相对定位，高度使用百分比自适应*/
+.content{
+	position: relative;
+	top: 38.2%;
+	height: 191px;
+	text-align: center;
+}
+.content .search-form{
+	position: relative;
+	height: 191px;
+	top: -191px;
+	width: 650px;
+	margin: 0 auto;
+}
+.content img{
+	width: 270px;
+	height: 129px;
+}
+/*设置表单*/
+.content .search-input{
+	width: 532px;
+	height:28px;
+	border:1px solid #b6b6b6;
+	padding: 3px 0 3px 7px;
+	border-right-width: 0;
+	border-color: #b8b8b8 transparent #ccc #b8b8b8;
+	vertical-align: middle;/*垂直居中*/
+}
+.content .search-input:hover{
+	border-color: #999 transparent #b3b3b3 #999;
+}
+.content .search-input:focus{
+	border-color: #4791ff transparent #4791ff #4791ff;
+}
+/*设置按钮*/
+.content .search-btn{
+	width: 100px;
+	height: 36px;
+	margin: -5px;
+	color: white;
+	font-size: 15px;
+	letter-spacing: 1px;/*增加字间宽*/
+	background-color: #3385ff;
+	border: 1px solid #2d7894;
+	vertical-align: middle;
+	cursor: pointer;/*鼠标小手*/
+}
+.content button:hover{
+	background-color: #317ef3;
+}
+.content form{
+	position: relative;
+}
+/*照相机图标*/
+.content .icon-mic{
+	position: absolute;
+	display: inline-block;
+	width: 22px;
+	height: 25px;
+	top: 0;
+	right: 110px;
+	background: url(../img/camera.png) 0px 10px no-repeat;
+	cursor: pointer;
+}
+.content .icon-mic:hover{
+	position: absolute;
+	top: 4px;
+	background: url(../img/camera.png) 0px -15px no-repeat;
+}
+/*底部信息，使用相对定位*/
+footer{
+	position: absolute;
+	bottom: 44px;
+	text-align: center;
+	width: 100%;
+}
+footer p{
+	text-align: center;
+}
+footer p a{
+	color: #00c;
+}
+footer p a:hover{
+	color:#00c;
+}
+footer .copy-right a{
+	color: #666;
+}
+footer .copy-right a:hover{
+	color: #666;
+}
+footer .icon-copyright{
+	position: relative;
+	display: inline-block;
+	top: 2px;
+	width: 14px;
+	height: 17px;
+	background: url(../img/icon.png) -600px -96px no-repeat;
+}
